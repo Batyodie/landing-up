@@ -1,0 +1,45 @@
+@import '~normalize.css';
+
+// FONTS
+@import './fonts.scss';
+
+// VARIABLES
+$accent: #5A98D0;
+
+// INITIAL
+
+
+
+// FILES
+
+
+@import 'components/contacts.scss';
+@import 'components/homePage/_header';
+@import 'components/homePage/media/_header-media';
+@import 'components/homePage/_sectionMain';
+@import 'components/homePage/media/_sectionMain-media';
+@import 'components/homePage/_belovedAddFooter';
+@import 'components/homePage/media/_belovedAddFooter-media';
+@import 'components/modal.scss';
+
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  *,*::after,*::before{
+    box-sizing: inherit;
+  }
+  body{
+  
+  color: $accent;
+  font-family: "Gilroy-Light";
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  }
+
+
+
+
+

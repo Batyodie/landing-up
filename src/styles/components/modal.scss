@@ -1,0 +1,324 @@
+.modal {}
+
+.modal.open .modal-overlay,
+.modal.open .main-contact-inner-right-modal{
+    opacity: 1;
+    z-index: 1000;
+}
+.modal.hide .modal-overlay,
+.modal.hide .main-contact-inner-right-modal{
+    opacity: 1;
+    z-index: 1000;
+}
+
+.modal-overlay, .main-contact-inner-right-modal {
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.open .main-contact-inner-right-modal{
+    transform: translateY(25px);
+}
+
+.modal.open .modal-overlay{
+    background: rgba(0, 0, 0, .5);
+}
+.modal.hide .main-contact-inner-right-modal{
+    transform: translateY(25px);
+}
+
+.modal.hide .modal-overlay{
+    background: rgba(0, 0, 0, .5);
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background .2s ease-in; 
+   }
+.main-contact-inner-right-modal{
+    width: 540px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transform: translateY(-200px);
+    transition: transform .2s ease-in;
+    justify-content: flex-start;
+     align-items: center;
+    // background: #FFFFFF;
+    // box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+   
+    }
+.inner-right-heading-modal{
+display: flex;
+width: 429px;
+justify-content: flex-start;
+margin: 56px 0px 48px 0px;
+}
+.heading-style-modal{
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+}
+
+.inner-right-form-modal{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+
+
+}
+.inner-form-modal{
+display: flex;
+flex-direction: column;
+height: 559px;
+background: #FFFFFF;
+box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+border-radius: 10px;  
+}
+
+.inner-form-modal input{
+list-style: none;
+border: 1px solid #356EAD;
+width: 408px;
+height: 72px;
+border-radius: 10px;
+outline:none;
+}
+.form-name-style-modal{
+    width: 350px;
+}
+.form-email-item-modal input:required:valid {
+    border-color: green;
+  }
+  .inner-form-modal input:required:valid {
+    border-color: green;
+  }
+.inner-form-modal textarea{
+overflow: auto;
+border: 1px solid #356EAD;
+border-radius: 10px;
+width: 408px;
+height: 144px;
+resize: none;
+outline:none;
+
+}
+.form-name-item-modal, .form-email-item-modal{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    align-items: center;
+}
+.form-message-item-modal{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.name-title-style-modal, .email-title-style-modal, .message-title-style-modal{
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+
+}
+
+.btn-modal{
+width: 450px;
+height: 72px;
+background: #5A98D0;
+box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+border-radius: 10px;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+.btn-modal_2{
+    width: 200px;
+    height: 72px;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;  
+}
+.button-body{
+display: flex;
+justify-content: center;
+width: 320px;
+}
+.inner-form-button-modal{
+    display: flex;
+    justify-content: center;
+}
+.btn-modal:hover{
+    background: #316099;
+    cursor: pointer;
+  }
+.btn-modal:active{
+    opacity: 0.8;
+    transform: scale(.95);
+  }
+.hidden-error-block, .hidden-error-block_2, .hidden-error-block_3{
+text-align: center;
+padding: 0px 0;
+color: red;
+margin: 0 auto;
+}
+.popUp-content{
+    width: 200px;
+    margin: 0px 30px;
+}
+.container-popUp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.popUp-style{
+font-size: 20px;
+}
+@media (max-width: 584px){
+    .btn-modal{ 
+        width: 300px;
+    } 
+
+}
+@media (max-height: 584px){
+    .form-name-item-modal, .form-email-item-modal{
+        padding-bottom: 10px;
+    }
+    
+    .inner-right-form-modal{
+        height: 475px;
+    }
+    .inner-form-modal{
+        height: 475px; 
+    }
+    .inner-form-modal textarea{
+        width: 350px;
+        height: 100px;
+    }
+    .inner-form-modal input{
+        width: 350px;
+    }
+    .inner-form-modal{
+      width: 400px;  
+    }
+    .inner-form-button-modal{
+        width: 353px;
+        margin: 12px 25px;
+        
+        
+    }
+    
+    .btn-modal--width{
+        
+        width: 290px;
+    }
+    .form-name-style-modal{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+}
+@media (max-width: 490px){
+    
+    
+    .main-contact-inner-right-modal{
+        width: 400px !important;
+         height: 475px !important;
+         
+}
+.inner-form-modal{
+    height: 353px !important;
+}
+        
+}
+
+@media (max-width: 420px){
+
+    .container-popUp{
+        width: 200px;
+    }
+    .inner-form-modal input{
+        width: 250px;
+        height: 60px;
+    }
+    .inner-form-modal textarea{
+        width: 290px;
+        height: 90px;
+    }
+    .btn-modal{
+        
+        width: 200px;
+    }
+    .inner-form-modal{
+        width: 300px; 
+      }
+      .form-name-item-modal{
+        align-items: flex-start;
+    }
+    .form-email-item-modal, .form-message-item-modal{
+        align-items: center;
+    }
+    .main-contact-inner-right-modal{
+        width: 300px !important;
+         height: 375px !important;
+}
+
+}
+@media (max-height: 507px){
+    
+    .form-name-item-modal, .form-email-item-modal{
+        padding-bottom: 5px;
+    }
+    .inner-right-form-modal{
+        height: 390px;
+        
+    }
+   
+    .inner-form-modal{
+        height: 350px; 
+       
+    }
+    .btn-modal{
+        margin-top: 5px;    
+    
+    }
+}
+@media (max-height: 478px){
+    .inner-form-button-modal {
+        width: 290px;
+        
+    }
+    .inner-form-button-modal{
+        width: 290px;
+        margin: 1px auto;
+
+    }
+    
+
+}
+@media (max-width: 320px){
+.inner-form-modal textarea {
+    width: 290px;
+    height: 125px;
+}
+}
